@@ -34,7 +34,7 @@ export class PingCommand extends CommandBase {
         let seconds = totalSeconds % 60;
 
         command.obj.reply(new RichEmbed().setTitle('Pong!')
-                                         .addField('Ping Time', new Date().getTime() - command.obj.message.createdTimestamp + " ms")
+                                         .addField('Ping Time', new Date().getTime() - command.obj.createdTimestamp + " ms")
                                          .addField('Uptime', `${ days } days, ${ hours } hours, ${ minutes } minutes and ${ seconds } seconds`));
 
     }
