@@ -1,8 +1,6 @@
-# google vision api bot for discord
+# ping command
 
-Uses google vision api to analyze images and returns the strategy(s).
-
-![screenshot.png](screenshot.png)
+Returns the current up time and ping time from the discord server.
 
 ## Installation
 
@@ -10,22 +8,14 @@ Install the node module in your bot project root directory:
 (if you don't have a bot yet see https://autobots.rocks)
 
 ```
-npm install @autobot/module-vision-api
-```
-
-Add the following configuration variable to your `.env` file:
-
-```
-VISION_BOT_COMMAND_PREFIX=?
-VISION_BOT_ADMIN_ROLE=<name of the role with to use this command>
-GOOGLE_APPLICATION_CREDENTIALS=<absolute path to google cloud service account key>
+npm install @autobot/module-ping
 ```
 
 ## Commands
 
 | Command                           | Description                                   |
 |-----------------------------------|-----------------------------------------------|
-| `?face <some url to an image>`    | Processes an image against google vision api. |
+| `!ping    | Returns ping time and uptime of the bot. |
 
 ## See More
 
