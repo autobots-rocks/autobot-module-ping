@@ -26,7 +26,7 @@ export class PingCommand extends CommandBase {
 
     public async run(command: CommandParser) {
 
-        let totalSeconds = (command.client.uptime / 1000);
+        let totalSeconds = (command.obj.client.uptime / 1000);
         let days = Math.floor(totalSeconds / 86400);
         let hours = Math.floor(totalSeconds / 3600);
         totalSeconds %= 3600;
