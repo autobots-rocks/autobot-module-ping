@@ -1,6 +1,6 @@
 {
     "name": "@autobot/module-ping",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "autobot module that returns the ping time and uptime.",
     "main": "dist/index",
     "typings": "dist/index",
