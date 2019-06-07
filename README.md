@@ -11,11 +11,16 @@ Install the node module in your bot project root directory:
 npm install @autobot/module-ping
 ```
 
+Add the prefix to your `.env` file:
+```
+PING_PREFIX=!ping
+````
+
 ## Commands
 
 | Command                           | Description                                   |
 |-----------------------------------|-----------------------------------------------|
-| `!ping    | Returns ping time and uptime of the bot. |
+| `!ping`                           | Returns ping time and uptime of the bot.      |
 
 ## See More
 

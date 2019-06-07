@@ -16,7 +16,8 @@ export class PingCommand extends CommandBase {
         super({
 
             event: Event.MESSAGE,
-            name: `!ping`,
+            requiredEnvVars: [ 'PING_PREFIX' ],
+            name: process.env.PING_PREFIX,
             group: 'help',
             description: 'Returns ping and uptime.'
 
