@@ -32,7 +32,7 @@ export class PingCommand extends CommandBase {
         let hours = Math.floor(totalSeconds / 3600);
         totalSeconds %= 3600;
         let minutes = Math.floor(totalSeconds / 60);
-        let seconds = totalSeconds % 60;
+        let seconds = Math.floor(totalSeconds % 60);
 
         command.obj.reply(new RichEmbed().setTitle('Pong!')
                                          .addField('Ping Time', new Date().getTime() - command.obj.createdTimestamp + " ms")
